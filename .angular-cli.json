@@ -19,9 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.less"
+        "styles.less",
+        "../node_modules/mapbox-gl/dist/mapbox-gl.css",
+        "../node_modules/mapbox-gl-draw/dist/mapbox-gl-draw.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/mapbox-gl/dist/mapbox-gl.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
