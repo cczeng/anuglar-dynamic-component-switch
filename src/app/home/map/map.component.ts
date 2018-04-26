@@ -47,7 +47,8 @@ export class MapComponent implements OnInit, OnDestroy {
   }
 
   flyTo() {
-    console.log('fly to..');
+    // [103.868564, 1.349383]
+    this.cmpRef.instance.flyToPoint([103.868564, 1.349383]);
   }
 
 }

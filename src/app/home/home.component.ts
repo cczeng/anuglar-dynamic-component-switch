@@ -10,13 +10,14 @@ import { MapmyindiaComponent } from './mapmyindia/mapmyindia.component';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-  map = MapboxComponent;
+  map;
 
   @ViewChild(MapComponent) maps: any;
 
   constructor() { }
 
   ngOnInit() {
+    this.map = MapboxComponent;
   }
 
   switchMap() {
